@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Container } from "@/components/Container";
 import { Figure } from "@/components/Figure";
 import { ContactDetailRow } from "@/components/contact/ContactDetailRow";
-import { contactDetails, contactImage, contactIntro, contactNoteLines } from "@/data/contact";
+import { contactDetails, contactImage, contactIntro } from "@/data/contact";
 import { site } from "@/data/site";
 
 export const metadata: Metadata = {

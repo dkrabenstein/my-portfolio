@@ -27,14 +27,11 @@ export type Project = {
 };
 
 export const projectsIntro = {
-  eyebrow: "Project journal / collection",
   title: "Projects & explorations.",
   descriptionLines: [
     "From first sketches to working systems. A place for the process,",
     "the details, and the things learned along the way.",
   ],
-  countLabel: "sample projects",
-  note: "Illustrative collection · project names, descriptions, and imagery are replaceable sample content.",
 };
 
 export const contactPrompt = {

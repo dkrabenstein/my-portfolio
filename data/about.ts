@@ -24,7 +24,6 @@ export type AboutSection = AboutSectionBase &
   );
 
 export const aboutIntro = {
-  eyebrow: "Background / approach / perspective",
   title: "About me.",
   subtitleLines: ["The person behind the projects.", "A little context for the work, and the curiosity behind it."],
   background: {
@@ -33,7 +32,7 @@ export const aboutIntro = {
   },
 };
 
-// Content for the sections below comes from data/Duncan_Rabenstein_Resume_Technician.pdf.
+// Content for the sections below comes from the resume at public/resume.pdf.
 export const aboutSections: AboutSection[] = [
   {
     id: "education",

@@ -17,9 +17,8 @@ export function Hero() {
 
       <div className="relative flex flex-col gap-(--space-4)">
         <h1 className="font-heading text-[clamp(3rem,9vw,8.5rem)] font-medium leading-none">{hero.title}</h1>
-        <div className="flex flex-col gap-(--space-3) border-t border-text/40 pt-(--space-3) sm:flex-row sm:items-center sm:justify-between">
-          <p className="text-lg"></p>
-          <Link href={hero.cta.href} className="flex items-center gap-(--space-4) text-sm hover:text-accent">
+        <div className="flex justify-end border-t border-text/40 pt-(--space-3)">
+          <Link href={hero.cta.href} aria-label={hero.cta.label} className="flex items-center text-sm hover:text-accent">
             <Icon name="arrow-up-right" size={24} />
           </Link>
         </div>

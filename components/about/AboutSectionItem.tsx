@@ -3,7 +3,6 @@ import { AboutEntryItem } from "@/components/about/AboutEntryItem";
 
 type AboutSectionItemProps = {
   section: AboutSection;
-  index: number;
 };
 
 function SectionContent({ section }: { section: AboutSection }) {
@@ -43,20 +42,16 @@ function SectionContent({ section }: { section: AboutSection }) {
   }
 }
 
-export function AboutSectionItem({ section, index }: AboutSectionItemProps) {
-  const number = String(index + 1).padStart(2, "0");
-
+export function AboutSectionItem({ section }: AboutSectionItemProps) {
   return (
     <section
       id={section.id}
       aria-labelledby={`${section.id}-heading`}
       className="flex scroll-mt-(--space-4) flex-col gap-(--space-3) border-t border-muted/30 pt-(--space-3) pb-(--space-4)"
     >
-      <div className="flex items-baseline gap-(--space-3)">
-        <h2 id={`${section.id}-heading`} className="font-heading text-[38px] font-medium leading-none">
-          {section.title}
-        </h2>
-      </div>
+      <h2 id={`${section.id}-heading`} className="font-heading text-[38px] font-medium leading-none">
+        {section.title}
+      </h2>
       <SectionContent section={section} />
     </section>
   );

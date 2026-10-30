@@ -12,26 +12,22 @@ export const metadata: Metadata = {
 };
 
 export default function ProjectsPage() {
-  const count = String(projects.length).padStart(2, "0");
-
   return (
     <main className="flex-1">
-      <PageIntro eyebrow={""} title={projectsIntro.title}>
-        <div className="flex flex-col gap-(--space-3) sm:flex-row sm:items-end sm:justify-between">
-          <p className="max-w-[660px] text-lg leading-[1.6] text-muted">
-            {projectsIntro.descriptionLines.map((line) => (
-              <span key={line} className="sm:block">
-                {line}{" "}
-              </span>
-            ))}
-          </p>
-        </div>
+      <PageIntro title={projectsIntro.title}>
+        <p className="max-w-[660px] text-lg leading-[1.6] text-muted">
+          {projectsIntro.descriptionLines.map((line) => (
+            <span key={line} className="sm:block">
+              {line}{" "}
+            </span>
+          ))}
+        </p>
         <hr className="border-muted/30" />
       </PageIntro>
 
       <Container className="grid gap-x-(--space-4) gap-y-(--space-5) pt-(--space-4) pb-(--space-5) sm:grid-cols-2">
-        {projects.map((project, index) => (
-          <ProjectCard key={project.slug} project={project} index={index} />
+        {projects.map((project) => (
+          <ProjectCard key={project.slug} project={project} />
         ))}
       </Container>
 

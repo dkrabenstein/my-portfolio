@@ -1,5 +1,4 @@
 import { Container } from "@/components/Container";
-import { OutlineButtonLink } from "@/components/OutlineButtonLink";
 import { PortraitPlaceholder } from "@/components/home/PortraitPlaceholder";
 import { aboutIntro } from "@/data/home";
 

@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <main className="flex-1">
-      <PageIntro eyebrow={""} title={aboutIntro.title} background={aboutIntro.background}>
+      <PageIntro title={aboutIntro.title} background={aboutIntro.background}>
         <p className="max-w-[560px] text-xl leading-[1.55] text-muted">
           {aboutIntro.subtitleLines.map((line) => (
             <span key={line} className="block">
@@ -24,8 +24,8 @@ export default function AboutPage() {
       </PageIntro>
 
       <Container className="flex flex-col pb-(--space-5)">
-        {aboutSections.map((section, index) => (
-          <AboutSectionItem key={section.id} section={section} index={index} />
+        {aboutSections.map((section) => (
+          <AboutSectionItem key={section.id} section={section} />
         ))}
       </Container>
     </main>

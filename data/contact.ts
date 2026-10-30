@@ -10,7 +10,6 @@ export type ContactDetail = {
 };
 
 export const contactIntro = {
-  eyebrow: "Contact / start a conversation",
   title: "Let’s Connect",
   body: "Whether you're a recruiter, fellow engineer, or just a curious stranger, I'd love to hear from you.",
 };
@@ -31,11 +30,6 @@ export const contactDetails: ContactDetail[] = [
     isLink: true,
     href: site.email ? `mailto:${site.email}` : undefined,
   },
-];
-
-export const contactNoteLines = [
-  "PROFILE & EMAIL / TO BE ADDED",
-  "Replace these placeholders with your preferred contact details.",
 ];
 
 export const contactImage = {

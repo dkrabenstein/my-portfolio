@@ -20,7 +20,6 @@ export const site = {
   description: "Personal engineering portfolio of Duncan Rabenstein.",
   location: "Kelowna, BC · Canada",
   locationShort: "Kelowna, BC",
-  // TODO: add the resume PDF to public/ at this path.
   resumeHref: "/resume.pdf",
   // TODO: add contact details. Empty values show placeholders on the contact page.
   email: "dkrabenstein@gmail.com",
