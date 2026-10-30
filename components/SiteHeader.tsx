@@ -24,7 +24,7 @@ export function SiteHeader() {
             download
             className="flex items-center gap-(--space-2) rounded border border-muted/30 px-(--space-3) py-(--space-2) hover:border-accent"
           >
-            Download resume
+            Download Resume
             <Icon name="download" size={15} />
           </a>
         </div>

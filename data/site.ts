@@ -18,27 +18,26 @@ export const site = {
   name: "Duncan Rabenstein",
   title: "Duncan Rabenstein – Engineering Portfolio",
   description: "Personal engineering portfolio of Duncan Rabenstein.",
-  footerTagline: "Engineering / ideas / outdoors",
-  location: "Okanagan, BC · Canada",
-  locationShort: "Okanagan, BC",
+  location: "Kelowna, BC · Canada",
+  locationShort: "Kelowna, BC",
   // TODO: add the resume PDF to public/ at this path.
   resumeHref: "/resume.pdf",
   // TODO: add contact details. Empty values show placeholders on the contact page.
-  email: "",
-  githubUrl: "",
-  linkedinUrl: "",
+  email: "dkrabenstein@gmail.com",
+  githubUrl: "https://github.com/dkrabenstein",
+  linkedinUrl: "https://www.linkedin.com/in/duncan-rabenstein/",
   nav: [
-    { label: "home", href: "/" },
-    { label: "projects", href: "/projects" },
+    { label: "Home", href: "/" },
+    { label: "Projects", href: "/projects" },
     {
-      label: "about me",
+      label: "About Me",
       href: "/about",
       menu: {
         heading: "On this page",
         items: aboutSections.map((section) => ({ label: section.title, href: `/about#${section.id}` })),
       },
     },
-    { label: "contact", href: "/contact" },
+    { label: "Contact", href: "/contact" },
   ] satisfies NavItem[],
 };
 

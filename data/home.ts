@@ -7,7 +7,7 @@ export type PageLink = {
 };
 
 export const hero = {
-  markers: ["Personal engineering portfolio", "Based in Okanagan, BC"],
+  markers: ["Personal engineering portfolio", "Based in Kelowna, BC"],
   title: "Duncan Rabenstein",
   tagline: "A field journal of ideas, projects, and possibilities.",
   cta: { label: "Explore my projects", href: "/projects" },
@@ -19,16 +19,14 @@ export const hero = {
 
 export const aboutIntro = {
   eyebrow: "A little about me / draft",
-  headingLines: ["A practical mind.", "An open landscape."],
+  headingLines: ["Bridging Hardware and Code"],
   // TODO: provisional statement from the design; replace with your own words.
   body: "I’m drawn to the space between an idea and something you can hold, test, and improve. This is a place to share what I’m building, what I’m learning, and the questions that keep me curious.",
   note: "Provisional personal statement · edit to make it yours.",
   cta: { label: "More about me", href: "/about" },
   portrait: {
-    label: "Personal portrait",
-    prompt: "A face to the name.",
-    // TODO: replace the placeholder with a photograph.
-    noteLines: ["PORTRAIT PLACEHOLDER", "Replace with Duncan’s photograph"],
+    imageUrl: "/images/home/portrait.jpg",
+    imageAlt: "Portrait of Duncan Rabenstein",
   },
 };
 
