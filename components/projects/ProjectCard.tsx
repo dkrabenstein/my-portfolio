@@ -24,8 +24,6 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
       </div>
       <div className="flex items-start justify-between gap-(--space-3) font-mono">
         <p className="text-[11px] uppercase leading-[1.4] text-accent">{project.disciplines.join(" / ")}</p>
-        {/* TODO: "SAMPLE" label comes from the design; remove once projects are real. */}
-        <p className="shrink-0 text-[10px] text-muted">SAMPLE / {number}</p>
       </div>
       <h2 className="font-heading text-4xl font-medium sm:text-[44px] leading-[1.05] group-hover:text-accent">{project.title}</h2>
       <p className="leading-[1.6] text-muted">{project.summary}</p>

@@ -41,6 +41,4 @@ export const contactNoteLines = [
 export const contactImage = {
   src: "/images/contact/okanagan-shoreline.jpg",
   alt: "A rocky lakeshore with driftwood under a pale evening sky and distant hills",
-  caption: "An open horizon.",
-  note: "Okanagan, BC",
 };
